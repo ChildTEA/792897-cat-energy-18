@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ярослав Смирнов](https://up.htmlacademy.ru/adaptive/18/user/792897).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://up.htmlacademy.ru/adaptive/18/user/8589).
 
 ---
 
