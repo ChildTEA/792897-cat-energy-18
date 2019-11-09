@@ -1,12 +1,451 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи. Каталог продукции</title>
-  </head>
-  <body>
 
-    <p>Каталог продукции.</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи. Каталог продукции</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <nav class="page-header__nav main-nav">
+      <div class="main-nav__top">
+        <a class="main-nav__logo-icon-wrapper" href="index.html">
+          <img class="main-nav__logo-icon" src="https://via.placeholder.com/33x38/f36827/273A00/?text=logo" alt="Иконка «Кэт энерджи»" width="33" height="38">
+        </a>
+        <a class="main-nav__logo-text-wrapper" href="index.html">
+          <img class="main-nav__logo-text" src="https://via.placeholder.com/101x18/f36827/273A00/?text=CAT_ENERGY" alt="Логотип «Кэт энерджи»" width="101" height="18">
+        </a>
+        <button class="main-nav__menu-toggler">
+          <span class="visually-hidden">
+            Переключить видимость меню.
+          </span>
+        </button>
+      </div>
+
+      <ul class="main-nav__site-nav">
+        <li class="main-nav__item">
+          <a class="main-nav__site-link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__site-link">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__site-link" href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="page-title">
+      Каталог продукции
+    </h1>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">
+        Каталог продукстов питания
+      </h2>
+
+      <ul class="catalog__list">
+        <li class="catalog__item product-card" id="#catalog-pro">
+          <div class="product-card__column">
+            <p class="product-card__image-wrapper">
+              <img class="product-card__image" src="https://via.placeholder.com/140x144/f36827/273A00/?text=Energy_meal" alt="Изображение товара" width="140" height="144">
+            </p>
+          </div>
+          <div class="product-card__column">
+            <h3 class="product-card__title">
+              Cat Energy PRO 500 г
+            </h3>
+            <table class="product-card__stats">
+              <tbody>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Объем
+                  </td>
+                  <td class="product-card__stat-value">
+                    500 г
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Вкус
+                  </td>
+                  <td class="product-card__stat-value">
+                    Курица
+                  </td>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Цена
+                  </td>
+                  <td class="product-card__stat-value">
+                    700 Р.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="product-card__order-button button">
+            Заказать
+          </button>
+        </li>
+
+        <li class="catalog__item product-card">
+          <div class="product-card__column">
+            <p class="product-card__image-wrapper">
+              <img class="product-card__image" src="https://via.placeholder.com/140x144/f36827/273A00/?text=Energy_meal" alt="Изображение товара" width="140" height="144">
+            </p>
+          </div>
+          <div class="product-card__column">
+            <h3 class="product-card__title">
+              Cat Energy PRO 1000 г
+            </h3>
+            <table class="product-card__stats">
+              <tbody>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Объем
+                  </td>
+                  <td class="product-card__stat-value">
+                    1000 г
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Вкус
+                  </td>
+                  <td class="product-card__stat-value">
+                    Курица
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Цена
+                  </td>
+                  <td class="product-card__stat-value">
+                    1000 Р.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="product-card__order-button button">
+            Заказать
+          </button>
+        </li>
+
+        <li class="catalog__item product-card">
+          <div class="product-card__column">
+            <p class="product-card__image-wrapper">
+              <img class="product-card__image" src="https://via.placeholder.com/140x144/f36827/273A00/?text=Energy_meal" alt="Изображение товара" width="140" height="144">
+            </p>
+          </div>
+          <div class="product-card__column">
+            <h3 class="product-card__title">
+              Cat Energy PRO 500 г
+            </h3>
+            <table class="product-card__stats">
+              <tbody>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Объем
+                  </td>
+                  <td class="product-card__stat-value">
+                    500 г
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Вкус
+                  </td>
+                  <td class="product-card__stat-value">
+                    Рыба
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Цена
+                  </td>
+                  <td class="product-card__stat-value">
+                    700 Р.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="product-card__order-button button">
+            Заказать
+          </button>
+        </li>
+
+        <li class="catalog__item product-card">
+          <div class="product-card__column">
+            <p class="product-card__image-wrapper">
+              <img class="product-card__image" src="https://via.placeholder.com/140x144/f36827/273A00/?text=Energy_meal" alt="Изображение товара" width="140" height="144">
+            </p>
+          </div>
+          <div class="product-card__column">
+            <h3 class="product-card__title">
+              Cat Energy PRO 1000 г
+            </h3>
+            <table class="product-card__stats">
+              <tbody>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Объем
+                  </td>
+                  <td class="product-card__stat-value">
+                    1000 г
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Вкус
+                  </td>
+                  <td class="product-card__stat-value">
+                    Рыба
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Цена
+                  </td>
+                  <td class="product-card__stat-value">
+                    1000 Р.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="product-card__order-button button">
+            Заказать
+          </button>
+        </li>
+
+        <li class="catalog__item product-card" id="catalog-slim">
+          <div class="product-card__column">
+            <p class="product-card__image-wrapper">
+              <img class="product-card__image" src="https://via.placeholder.com/140x144/f36827/273A00/?text=Energy_meal" alt="Изображение товара" width="140" height="144">
+            </p>
+          </div>
+          <div class="product-card__column">
+            <h3 class="product-card__title">
+              Cat Energy Slim 500 г
+            </h3>
+            <table class="product-card__stats">
+              <tbody>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Объем
+                  </td>
+                  <td class="product-card__stat-value">
+                    500 г
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Вкус
+                  </td>
+                  <td class="product-card__stat-value">
+                    Гречка
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Цена
+                  </td>
+                  <td class="product-card__stat-value">
+                    400 Р.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="product-card__order-button button">
+            Заказать
+          </button>
+        </li>
+
+        <li class="catalog__item product-card">
+          <div class="product-card__column">
+            <p class="product-card__image-wrapper">
+              <img class="product-card__image" src="https://via.placeholder.com/140x144/f36827/273A00/?text=Energy_meal" alt="Изображение товара" width="140" height="144">
+            </p>
+          </div>
+          <div class="product-card__column">
+            <h3 class="product-card__title">
+              Cat Energy Slim 1000 г
+            </h3>
+            <table class="product-card__stats">
+              <tbody>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Объем
+                  </td>
+                  <td class="product-card__stat-value">
+                    1000 г
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Вкус
+                  </td>
+                  <td class="product-card__stat-value">
+                    Гречка
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Цена
+                  </td>
+                  <td class="product-card__stat-value">
+                    700 Р.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="product-card__order-button button">
+            Заказать
+          </button>
+        </li>
+
+        <li class="catalog__item product-card">
+          <div class="product-card__column">
+            <p class="product-card__image-wrapper">
+              <img class="product-card__image" src="https://via.placeholder.com/140x144/f36827/273A00/?text=Energy_meal" alt="Изображение товара" width="140" height="144">
+            </p>
+          </div>
+          <div class="product-card__column">
+            <h3 class="product-card__title">
+              Cat Energy Slim 500 г
+            </h3>
+            <table class="product-card__stats">
+              <tbody>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Объем
+                  </td>
+                  <td class="product-card__stat-value">
+                    500 г
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Вкус
+                  </td>
+                  <td class="product-card__stat-value">
+                    Рис
+                  </td>
+                </tr>
+                <tr>
+                  <td class="product-card__stat-name">
+                    Цена
+                  </td>
+                  <td class="product-card__stat-value">
+                    500 Р.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="product-card__order-button button">
+            Заказать
+          </button>
+        </li>
+      </ul>
+
+      <div class="catalog__show-more container">
+        <p class="catalog-show-more-text">
+          Показать еще 100500 товаров
+        </p>
+        <p class="catalog__show-more-tip">
+          На самом деле вкусов гораздо больше!
+        </p>
+
+        <a class="button" href="#nowhere">
+          Показать все
+        </a>
+      </div>
+    </section>
+
+    <section class="catalog-additional">
+      <h2 class="section-title section-title--line-style">
+        Дополнительные товары
+      </h2>
+
+      <!-- Здесь будут дополнительные товары -->
+    </section>
+
+    <section class="contacts">
+        <h2 class="visually-hidden">
+          Наши контакты
+        </h2>
+
+        <div class="contacts__info">
+          <p class="contacts__lead">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+
+          <address class="contatst__address">
+            Ул. Большая Конюшенная, д. 19/8
+            Санкт-Петербург
+          </address>
+        </div>
+
+        <div class="contacts__map">
+          <!-- Здесь будет интерактивная карта -->
+        </div>
+      </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__logo logo">
+      <a class="logo__link">
+        <img class="logo__image" src="https://via.placeholder.com/128x24/f36827/273A00/?text=CAT_ENERGY" alt="Логотип «Кэт энерджи»" width="128" height="24">
+      </a>
+    </div>
+
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="" class="social__link social__link--vk">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a href="" class="social__link social__link--inst">
+            <span class="visually-hidden">Инстаграмм</span>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a href="" class="social__link social__link--fb">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p class="page-footer__copyrights copyrights">
+      <a class="copyrights__text" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+      </a>
+
+      <a class="copyrights__logo-wrpapper" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyrights__logo-academy" src="img/htmlacademy.svg" alt="Логотип «HTML Academy»" width="27" height="34">
+      </a>
+    </p>
+  </footer>
+
+</body>
+
 </html>
