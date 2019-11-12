@@ -13,7 +13,7 @@
         <a class="main-nav__logo-icon-wrapper">
           <img class="main-nav__logo-icon" src="https://via.placeholder.com/33x38/f36827/273A00/?text=logo" alt="Иконка «Кэт энерджи»" width="33" height="38">
         </a>
-        <a class="main-nav__logo-text-wrapper">
+        <a class="main-nav__logo-text-wrapper logo logo--small">
           <img class="main-nav__logo-text" src="https://via.placeholder.com/101x18/f36827/273A00/?text=CAT_ENERGY" alt="Логотип «Кэт энерджи»" width="101" height="18">
         </a>
         <button class="main-nav__menu-toggler" type="button">
@@ -23,19 +23,19 @@
         </button>
       </div>
 
-      <ul class="main-nav__site-nav">
+      <ul class="main-nav__nav">
         <li class="main-nav__item">
-          <a class="main-nav__site-link">
+          <a class="main-nav__link">
             Главная
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__site-link" href="catalog.html">
+          <a class="main-nav__link" href="catalog.html">
             Каталог продукции
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__site-link" href="form.html">
+          <a class="main-nav__link" href="form.html">
             Подбор программы
           </a>
         </li>
@@ -62,7 +62,7 @@
         </small>
       </div>
 
-      <a class="button container" href="form.html">
+      <a class="choose-program__link button container" href="form.html">
         Подобрать программу
       </a>
 
@@ -95,7 +95,7 @@
     </section>
 
     <section class="about-product">
-      <h2 class="section-title">
+      <h2 class="heading heading--h2">
         Как это работает
       </h2>
       <ul class="about-product__list">
@@ -123,7 +123,7 @@
     </section>
 
     <section class="example">
-      <h2 class="section-title container">
+      <h2 class="heading heading--h2 container">
         Живой пример
       </h2>
 
@@ -133,19 +133,23 @@
 
       <div class="example__results">
         <dl class="simple-table">
-          <dt class="simple-table__value">
-            5 кг
-          </dt>
-          <dd class="simple-table__description">
-            снижение веса
-          </dd>
+          <div class="sible-table__cell">
+            <dt class="simple-table__value">
+              5 кг
+            </dt>
+            <dd class="simple-table__description">
+              снижение веса
+            </dd>
+          </div>
 
-          <dt class="simple-table__value">
-            60 дней
-          </dt>
-          <dd class="simple-table__description">
-            затрачено времени
-          </dd>
+          <div class="sible-table__cell">
+            <dt class="simple-table__value">
+              60 дней
+            </dt>
+            <dd class="simple-table__description">
+              затрачено времени
+            </dd>
+            </div>
         </dl>
 
         <p class="example__total-cost">
@@ -207,11 +211,11 @@
     </div>
 
     <p class="page-footer__copyrights copyrights">
-      <a class="copyrights__text" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyrights__text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         HTML Academy
       </a>
 
-      <a class="copyrights__logo-wrpapper" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyrights__logo-wrpapper" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <img class="copyrights__logo-academy" src="img/htmlacademy.svg" alt="Логотип «HTML Academy»" width="27" height="34">
       </a>
     </p>
