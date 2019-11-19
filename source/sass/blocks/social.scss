@@ -1,0 +1,58 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__item {
+  margin-right: 40px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+  color: $brownish-grey;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $leaf;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  & svg {
+    fill: currentColor;
+  }
+
+  &--vk {
+    & svg {
+      width: 22px;
+      height: 12px;
+    }
+  }
+
+  &--inst {
+    & svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  &--fb {
+    & svg {
+      width: 10px;
+      height: 19px;
+    }
+  }
+}

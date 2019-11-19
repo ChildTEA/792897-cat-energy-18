@@ -1,0 +1,52 @@
+.copyrights {
+  display: flex;
+  padding: 22px 0 10px;
+}
+
+.copyrights__text {
+  padding-top: 8px;
+
+  font-size: 16px;
+  line-height: 1;
+  color: $greyish-brown;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $leaf;
+
+    & .copyrights__logo-academy {
+      color: inherit;
+    }
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+
+.copyrights__logo-wrpapper {
+  margin-left: auto;
+}
+
+.copyrights__logo-academy {
+  color: $brownish-grey;
+
+  &:hover,
+  &:focus {
+    color: $leaf;
+
+    & .copyrights__logo-academy {
+      color: inherit;
+    }
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  & svg {
+    fill: currentColor;
+  }
+}

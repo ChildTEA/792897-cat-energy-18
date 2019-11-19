@@ -1,0 +1,37 @@
+.button {
+  display: block;
+  padding: 11px 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $alter-font-stack;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: $leaf;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $grass;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--alter {
+    padding-bottom: 9px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &--light {
+    color: $greyish-brown;
+    background-color: $white-two;
+  }
+}

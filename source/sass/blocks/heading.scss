@@ -1,0 +1,35 @@
+.heading {
+  margin-top: 0;
+  font-weight: 400;
+  font-family: $alter-font-stack;
+  color: $black-three;
+
+  &--h2 {
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  &--h3 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &--line-style {
+    position: relative;
+    display: flex;
+
+    &::after {
+      content: "";
+      align-self: center;
+      height: 3px;
+      margin-left: 22px;
+
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 52px;
+
+      background-color: $leaf;
+      transform: translateY(3px);
+    }
+  }
+}
