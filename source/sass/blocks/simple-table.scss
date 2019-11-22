@@ -1,0 +1,42 @@
+.simple-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.simple-table__cell {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 124px;
+  padding: 13px 20px 17px;
+
+  text-align: center;
+
+  border: solid 1px $pinkish-grey;
+  border-radius: 3px;
+}
+
+.simple-table__value {
+  font-size: 24px;
+  line-height: 1;
+  font-family: $alter-font-stack;
+  color: $black-three;
+  text-transform: uppercase;
+}
+
+.simple-table__description {
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+
+  margin: 0;
+  padding: 0 16px;
+
+  font-size: 12px;
+  line-height: 1;
+
+  background-color: $white-two;
+
+  transform: translateX(-50%);
+}

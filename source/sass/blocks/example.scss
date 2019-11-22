@@ -1,0 +1,27 @@
+.example {
+  padding-top: 17px;
+  padding-bottom: 29px;
+  background-color: $white-two;
+}
+
+.example__heading {
+  margin-bottom: 23px;
+}
+
+.example__text {
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding: 0 10px 0 0;
+}
+
+.example__table {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.example__total-cost {
+  font-family: $alter-font-stack;
+  color: $black-three;
+  text-align: center;
+  text-transform: uppercase;
+}

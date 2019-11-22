@@ -1,0 +1,23 @@
+.logo {
+  &[href] {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.logo__image {
+  display: block;
+  width: 191px;
+  height: 39px;
+
+  &--simple {
+    width: 128px;
+    height: 24px;
+  }
+}
