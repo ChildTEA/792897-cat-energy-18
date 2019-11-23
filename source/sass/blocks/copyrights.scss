@@ -31,6 +31,7 @@
 }
 
 .copyrights__logo-academy {
+  display: block;
   color: $brownish-grey;
 
   &:hover,
@@ -47,6 +48,7 @@
   }
 
   & svg {
+    display: block;
     fill: currentColor;
   }
 }

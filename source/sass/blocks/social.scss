@@ -31,7 +31,10 @@
 }
 
 .social__icon {
+  display: block;
+
   & svg {
+    display: block;
     fill: currentColor;
   }
 
