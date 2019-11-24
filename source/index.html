@@ -24,7 +24,7 @@
 
       <ul class="main-nav__list dropdown">
         <li class="main-nav__item">
-          <a class="main-nav__link">
+          <a class="main-nav__link main-nav__link--current">
             Главная
           </a>
         </li>
@@ -53,17 +53,19 @@
       </h2>
 
       <div class="choose-program__intro">
-        <b class="choose-program__lead">
-          Функциональное питание для котов
-        </b>
-        <small class="choose-program__tip">
-          Занялся собой? Займись котом!
-        </small>
-      </div>
+        <div class="choose-program__intro-text">
+          <b class="choose-program__lead">
+            Функциональное питание для котов
+          </b>
+          <small class="choose-program__tip">
+            Занялся собой? Займись котом!
+          </small>
+        </div>
 
-      <a class="choose-program__link button container" href="form.html">
-        Подобрать программу
-      </a>
+        <a class="choose-program__link button" href="form.html">
+          Подобрать программу
+        </a>
+      </div>
 
       <ul class="choose-program__list">
         <li class="choose-program__item container">
@@ -82,7 +84,7 @@
           <h3 class="choose-program__item-title choose-program__item-title--weight-grow">
             Набор массы
           </h3>
-          <p class="choose-program__item-text">
+          <p class="choose-program__item-text choose-program__item-text--indent-right">
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
@@ -115,7 +117,7 @@
         </li>
         <li class="about-product__item about-product__item--duration">
           <p class="about-product__text">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
           </p>
         </li>
       </ul>
@@ -137,7 +139,7 @@
               5 кг
             </dt>
             <dd class="simple-table__description">
-              снижение веса
+              снижение<span>&nbsp;</span>веса
             </dd>
           </div>
 
@@ -146,19 +148,23 @@
               60 дней
             </dt>
             <dd class="simple-table__description">
-              затрачено времени
+              затрачено<span>&nbsp;</span>времени
             </dd>
           </div>
         </dl>
 
         <p class="example__total-cost">
-          Затраты на питание: 15 000 руб.
+          <span class="example__total-cost-string">Затраты на питание:</span><span class="example__total-cost-string"> 15 000 руб.</span>
         </p>
       </div>
 
       <!-- Здесь будет слайдер До/После -->
       <div class="example__slider diff-slider">
-        <img class="diff-slider__patch" src="https://via.placeholder.com/320x320/0F000F/FFFFFF/?text=It%27s_a_cat_slider" alt="Временная заплатка под слайдер">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="https://via.placeholder.com/320x320/0F000F/FFFFFF/?text=It%27s_a_cat_slider">
+          <source media="(min-width: 768px)" srcset="https://via.placeholder.com/768x683/0F000F/FFFFFF/?text=It%27s_a_cat_slider">
+          <img class="diff-slider__patch" src="https://via.placeholder.com/320x320/0F000F/FFFFFF/?text=It%27s_a_cat_slider" alt="Временная заплатка под слайдер">
+        </picture>
       </div>
       <!-- ^^^ Конец слайдера ^^^ -->
     </section>
@@ -174,26 +180,30 @@
         </p>
 
         <address class="contacts__address">
-          Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          Ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 <span class="contacts__address-part--PP">Санкт-Петербург</span>
         </address>
       </div>
 
       <!-- Здесь будет интерактивная карта -->
       <div class="contacts__map">
-        <img class="contacts__map-patch" src="https://via.placeholder.com/320x362/0F000F/FFFFFF/?text=It%27s_a_map" alt="Пременная заплатка для карты">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="https://via.placeholder.com/320x362/0F000F/FFFFFF/?text=It%27s_a_map">
+          <source media="(min-width: 768px)" srcset="https://via.placeholder.com/768x402/0F000F/FFFFFF/?text=It%27s_a_map">
+          <img class="contacts__map-patch" src="https://via.placeholder.com/320x362/0F000F/FFFFFF/?text=It%27s_a_map" alt="Пременная заплатка для карты">
+        </picture>
       </div>
       <!-- ^^^ Конец интерактивной карты ^^^ -->
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__logo logo container">
+    <div class="page-footer__logo logo">
       <a class="logo">
         <img class="logo__image logo__image--simple" src="img/logo-footer.svg" alt="Логотип «Кэт энерджи»" width="128" height="24">
       </a>
     </div>
 
-    <div class="page-footer__social-wrapper container">
+    <div class="page-footer__social-wrapper">
       <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link" href="#nowhere">
@@ -232,7 +242,7 @@
       </ul>
     </div>
 
-    <p class="page-footer__copyrights copyrights container">
+    <p class="page-footer__copyrights copyrights">
       <a class="copyrights__text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         HTML Academy
       </a>
