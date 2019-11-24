@@ -7,6 +7,18 @@
   font-family: $alter-font-stack;
   text-align: center;
   color: $black-three;
+
+  @media ($tablet) {
+    display: flex;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
 }
 
 .main-nav__top {
@@ -15,6 +27,13 @@
   padding: 11px 20px 15px;
 
   border-bottom: 1px solid #e6e6e6;
+
+  @media ($tablet) {
+    flex-shrink: 0;
+    margin-right: 94px;
+    padding: 0 0 0 0;
+    border: none;
+  }
 }
 
 .main-nav__menu-toggler {
@@ -32,6 +51,10 @@
 
   cursor: pointer;
 
+  @media ($tablet) {
+    display: none;
+  }
+
   &--opened {
     width: 25px;
     height: 19px;
@@ -44,11 +67,31 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media ($tablet) {
+    margin-bottom: -15px;
+    padding-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .main-nav__item {
   padding: 24px 20px 21px;
   border-bottom: 1px solid #e6e6e6;
+
+  @media ($tablet) {
+    margin-right: 35px;
+    margin-bottom: 15px;
+    padding: 0 0 10px 0;
+    border: none;
+  }
+
+  &:last-of-type {
+    @media ($tablet) {
+      margin-right: 0;
+    }
+  }
 }
 
 .main-nav__link {
@@ -63,6 +106,24 @@
 
     &:active {
       opacity: 0.3;
+    }
+  }
+
+  &--current {
+    @media ($tablet) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        left: 0;
+
+        height: 2px;
+
+        background-color: $leaf;
+      }
     }
   }
 }

@@ -2,16 +2,35 @@
   padding-top: 17px;
   padding-bottom: 29px;
   background-color: $white-two;
+
+  @media ($tablet) {
+    padding-top: 5px;
+    background-color: transparent;
+  }
 }
 
 .example__heading {
   margin-bottom: 23px;
+
+  @media ($tablet) {
+    margin-bottom: 62px;
+  }
 }
 
 .example__text {
   margin-top: 0;
   margin-bottom: 25px;
   padding: 0 10px 0 0;
+
+  @media ($tablet) {
+    margin-bottom: 54px;
+  }
+}
+
+.example__results {
+  @media ($tablet) {
+    display: flex;
+  }
 }
 
 .example__table {
@@ -20,8 +39,25 @@
 }
 
 .example__total-cost {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-family: $alter-font-stack;
-  color: $black-three;
   text-align: center;
   text-transform: uppercase;
+  color: $black-three;
+
+  @media ($tablet) {
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 1;
+    text-align: right;
+  }
+}
+
+.example__total-cost-string {
+  @media ($tablet) {
+    display: block;
+    padding-top: 10px;
+  }
 }

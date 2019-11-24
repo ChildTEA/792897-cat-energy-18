@@ -1,6 +1,10 @@
 .copyrights {
   display: flex;
   padding: 22px 0 10px;
+
+  @media ($tablet) {
+    padding: 0;
+  }
 }
 
 .copyrights__text {
@@ -10,6 +14,10 @@
   line-height: 1;
   color: $greyish-brown;
   text-decoration: none;
+
+  @media ($tablet) {
+    margin-right: 23px;
+  }
 
   &:hover,
   &:focus {

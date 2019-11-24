@@ -15,6 +15,11 @@
 
   border: solid 1px $pinkish-grey;
   border-radius: 3px;
+
+  @media ($tablet) {
+    width: 162px;
+    margin-right: 42px;
+  }
 }
 
 .simple-table__value {
@@ -23,6 +28,11 @@
   font-family: $alter-font-stack;
   color: $black-three;
   text-transform: uppercase;
+
+  @media ($tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .simple-table__description {
@@ -30,6 +40,7 @@
   bottom: -16px;
   left: 50%;
 
+  box-sizing: content-box;
   margin: 0;
   padding: 0 16px;
 
@@ -39,4 +50,11 @@
   background-color: $white-two;
 
   transform: translateX(-50%);
+
+  @media ($tablet) {
+    position: absolute;
+    bottom: -9px;
+    font-size: 14px;
+    background-color: #ffffff;
+  }
 }

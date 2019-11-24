@@ -1,5 +1,4 @@
 .button {
-  display: block;
   padding: 11px 20px;
 
   font-size: 14px;
@@ -14,6 +13,12 @@
   border: none;
 
   cursor: pointer;
+
+  @media ($tablet) {
+    padding: 14px 27px 18px;
+    font-size: 20px;
+    line-height: 1;
+  }
 
   &:hover,
   &:focus {

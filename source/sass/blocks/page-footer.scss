@@ -1,12 +1,24 @@
 .page-footer {
-  padding: 39px 0 10px;
+  padding: 39px 30px 10px;
   background-color: $white-two;
+
+  @media ($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 58px 30px 58px;
+  }
 }
 
 .page-footer__logo {
   display: flex;
   justify-content: center;
   margin-bottom: 31px;
+
+  @media ($tablet) {
+    margin-bottom: 0;
+    padding-top: 6px;
+    padding-right: 30px;  // Для центрирования социальных сетей
+  }
 }
 
 .page-footer__social-wrapper {
@@ -16,6 +28,13 @@
 
   border-top: 1px solid rgba($greyish-brown, 0.1);
   border-bottom: 1px solid rgba($greyish-brown, 0.1);
+
+  @media ($tablet) {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2px 0 0;
+    border: none;
+  }
 }
 
 .page-footer__social {
@@ -23,6 +42,5 @@
 }
 
 .page-footer__copyrights {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }

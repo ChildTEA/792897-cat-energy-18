@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 354px;
   padding: 0;
 
   list-style: none;
@@ -9,6 +10,10 @@
 
 .social__item {
   margin-right: 40px;
+
+  @media ($tablet) {
+    margin-right: 28px;
+  }
 
   &:last-of-type {
     margin-right: 0;
@@ -42,6 +47,11 @@
     & svg {
       width: 22px;
       height: 12px;
+
+      @media ($tablet) {
+        width: 30px;
+        height: 16px;
+      }
     }
   }
 
@@ -49,6 +59,11 @@
     & svg {
       width: 17px;
       height: 17px;
+
+      @media ($tablet) {
+        width: 23px;
+        height: 23px;
+      }
     }
   }
 
@@ -56,6 +71,11 @@
     & svg {
       width: 10px;
       height: 19px;
+
+      @media ($tablet) {
+        width: 14px;
+        height: 28px;
+      }
     }
   }
 }
