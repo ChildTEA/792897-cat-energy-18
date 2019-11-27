@@ -4,15 +4,43 @@
   @media ($tablet) {
     margin-bottom: 45px;
   }
+
+  @media ($desktop) {
+    margin-bottom: 73px;
+  }
 }
 
 .choose-program__intro {
   @media ($tablet) {
     position: relative;
-    padding: 33px 117px 530px;
+    padding: 33px 117px 529px;
+  }
+
+  @media ($desktop) {
+    box-sizing: border-box;
+    min-height: 559px;
+    margin-bottom: 80px;
+    padding: 85px 0 85px;
   }
 
   &::before {
+    @media ($desktop) {
+      content: "";
+      position: absolute;
+      top: -137px;
+      right: 0;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+
+      background-color: #64a83b;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+  }
+
+  &::after {
     @media ($tablet) {
       content: "";
       position: absolute;
@@ -30,6 +58,28 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+
+    @media ($desktop) {
+      top: 5px;
+      right: auto;
+      left: calc(50% - 160px);
+
+      width: 552px;
+      height: 499px;
+
+      background-image: url("../img/index-can-desktop@1x.png");
+    }
+  }
+}
+
+.choose-program__intro-content {
+  @media ($desktop) {
+    box-sizing: border-box;
+    width: $desk-container-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 80px;
+    padding-right: $desk-container-width / 2;
   }
 }
 
@@ -93,8 +143,13 @@
 
   @media ($tablet) {
     padding-right: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     font-size: 60px;
+  }
+
+  @media ($desktop) {
+    // margin-bottom: 42px;
+    padding-right: 0;
   }
 }
 
@@ -106,8 +161,12 @@
   text-transform: uppercase;
 
   @media ($tablet) {
-    margin-bottom: 50px;
+    margin-bottom: 47px;
     font-size: 20px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 52px;
   }
 }
 
@@ -122,9 +181,16 @@
 }
 
 .choose-program__list {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
+
+  @media ($desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .choose-program__item {
@@ -135,7 +201,15 @@
   @media ($tablet) {
     position: relative;
     margin-bottom: 30px;
-    padding: 74px 280px 58px 52px;
+    padding: 76px 280px 56px 52px;
+  }
+
+  @media ($desktop) {
+    position: static;
+    box-sizing: border-box;
+    width: 570px;
+    margin-bottom: 0;
+    padding: 76px 30px 55px 52px;
   }
 
   &:last-of-type {
@@ -165,6 +239,12 @@
     line-height: 37px;
   }
 
+  @media ($desktop) {
+    position: relative;
+    margin-bottom: 74px;
+    padding-left: 162px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -178,12 +258,20 @@
     border-radius: 50%;
 
     @media ($tablet) {
-      top: 90px;
+      top: 92px;
       right: 62px;
       left: auto;
 
       width: 200px;
       height: 200px;
+    }
+
+    @media ($desktop) {
+      top: -29px;
+      right: auto;
+      left: 0;
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -204,12 +292,21 @@
       background-repeat: no-repeat;
 
       @media ($tablet) {
-        top: 78px;
+        top: 80px;
         right: 91px;
         left: auto;
 
         width: 141px;
         height: 194px;
+      }
+
+      @media ($desktop) {
+        top: -35px;
+        right: auto;
+        left: 14px;
+
+        width: 71px;
+        height: 97px;
       }
     }
   }
@@ -225,12 +322,21 @@
       background-repeat: no-repeat;
 
       @media ($tablet) {
-        top: 134px;
+        top: 135px;
         right: 28px;
         left: auto;
 
         width: 268px;
         height: 113px;
+      }
+
+      @media ($desktop) {
+        top: -7px;
+        right: auto;
+        left: -18px;
+
+        width: 134px;
+        height: 57px;
       }
     }
   }
@@ -245,7 +351,11 @@
     position: relative;
 
     @media ($tablet) {
-      margin-bottom: 55px;
+      margin-bottom: 56px;
+    }
+
+    @media ($desktop) {
+      margin-bottom: 32px;
     }
 
     &::after {

@@ -5,7 +5,15 @@
 
   @media ($tablet) {
     padding-top: 5px;
+    padding-bottom: 2px;
     background-color: transparent;
+  }
+
+  @media ($desktop) {
+    position: relative;
+    margin-top: -56px;
+    padding-top: 56px;
+    padding-bottom: 74px;
   }
 }
 
@@ -13,7 +21,20 @@
   margin-bottom: 23px;
 
   @media ($tablet) {
-    margin-bottom: 62px;
+    margin-bottom: 64px;
+  }
+
+  @media ($desktop) {
+    box-sizing: border-box;
+    margin-bottom: 146px;
+    padding-right: $desk-container-width / 2;
+  }
+}
+
+.example__inner {
+  @media ($desktop) {
+    box-sizing: border-box;
+    padding-right: 775px;
   }
 }
 
@@ -23,7 +44,11 @@
   padding: 0 10px 0 0;
 
   @media ($tablet) {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 68px;
   }
 }
 
@@ -31,11 +56,24 @@
   @media ($tablet) {
     display: flex;
   }
+
+  @media ($desktop) {
+    display: block;
+  }
 }
 
 .example__table {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 19px;
+
+  @media ($tablet) {
+    width: calc(50% + 12px);
+  }
+
+  @media ($desktop) {
+    width: auto;
+    margin-bottom: 45px;
+  }
 }
 
 .example__total-cost {
@@ -53,11 +91,33 @@
     line-height: 1;
     text-align: right;
   }
+
+  @media ($desktop) {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
 }
 
 .example__total-cost-string {
   @media ($tablet) {
     display: block;
     padding-top: 10px;
+  }
+
+  @media ($desktop) {
+    margin-right: 64px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.example__slider {
+  @media ($desktop) {
+    position: absolute;
+    bottom: 60px;
+    left: calc(50% - 50px);
   }
 }

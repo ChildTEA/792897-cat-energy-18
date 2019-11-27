@@ -33,6 +33,11 @@
     padding-bottom: 9px;
     font-size: 16px;
     line-height: 20px;
+
+    @media ($tablet) {
+      padding-top: 11px;
+      padding-bottom: 9px;
+    }
   }
 
   &--light {

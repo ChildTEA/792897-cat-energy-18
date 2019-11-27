@@ -1,11 +1,6 @@
 .main-nav {
   margin: 0;
   padding: 0;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1;
-  font-family: $alter-font-stack;
-  text-align: center;
   color: $black-three;
 
   @media ($tablet) {
@@ -14,10 +9,13 @@
     margin-left: 30px;
     padding-top: 24px;
     padding-bottom: 24px;
+  }
 
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 400;
+  @media ($desktop) {
+    width: $desk-container-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 53px;
   }
 }
 
@@ -66,6 +64,13 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  font-family: $alter-font-stack;
+  text-align: center;
+
   list-style: none;
 
   @media ($tablet) {
@@ -73,6 +78,27 @@
     padding-top: 18px;
     display: flex;
     flex-wrap: wrap;
+
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  @media ($desktop) {
+    margin-left: auto;
+    padding-top: 21px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  &--contrast-lightness {
+    @media ($desktop) {
+      color: #ffffff;
+
+      & .main-nav__link--current::after {
+        background-color: currentColor;
+      }
+    }
   }
 }
 
@@ -116,13 +142,19 @@
       &::after {
         content: "";
         position: absolute;
-        right: 0;
-        bottom: -10px;
-        left: 0;
+        right: 1px;
+        bottom: -9px;
+        left: 1px;
 
         height: 2px;
 
         background-color: $leaf;
+
+        @media ($desktop) {
+          bottom: -7px;
+          right: 1px;
+          left: 2px;
+        }
       }
     }
   }
