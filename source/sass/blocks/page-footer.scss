@@ -3,11 +3,11 @@
   background-color: $white-two;
 
   @media ($tablet) {
-    padding: 58px 30px 58px;
+    padding: 58px 30px 52px;
   }
 
   @media ($desktop) {
-    padding: 58px 0 58px;
+    padding: 58px 0 50px;
   }
 }
 
@@ -31,7 +31,7 @@
 
   @media ($tablet) {
     margin-bottom: 0;
-    padding-top: 6px;
+    padding-top: 5px;
     padding-right: 30px;  // Для центрирования социальных сетей
   }
 }
@@ -50,13 +50,13 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
-    padding: 2px 0 0;
+    padding: 0;
     border: none;
   }
 }
 
 .page-footer__social {
-  margin: 0 0 0 -12px;
+  margin: 0 0 0 -10px;
 }
 
 .page-footer__copyrights {

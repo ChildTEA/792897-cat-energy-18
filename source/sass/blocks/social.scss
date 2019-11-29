@@ -11,6 +11,7 @@
 
 .social__item {
   margin-right: 40px;
+  margin-bottom: 10px;
 
   @media ($tablet) {
     margin-right: 28px;
@@ -22,7 +23,10 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
   color: $brownish-grey;
   cursor: pointer;
 
@@ -37,8 +41,6 @@
 }
 
 .social__icon {
-  display: block;
-
   & svg {
     display: block;
     fill: currentColor;
