@@ -1,28 +1,64 @@
 .page-footer {
-  padding: 39px 0 10px;
+  padding: 39px 20px 10px;
   background-color: $white-two;
+
+  @media ($tablet) {
+    padding: 58px 30px 52px;
+  }
+
+  @media ($desktop) {
+    padding: 58px 0 50px;
+  }
+}
+
+.page-footer__content {
+  @media ($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media ($desktop) {
+    width: $desk-container-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .page-footer__logo {
   display: flex;
   justify-content: center;
   margin-bottom: 31px;
+
+  @media ($tablet) {
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-right: 30px;  // Для центрирования социальных сетей
+  }
 }
 
 .page-footer__social-wrapper {
+  display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 22px 0 17px 0;
+  padding: 22px 0 21px 0;
 
   border-top: 1px solid rgba($greyish-brown, 0.1);
   border-bottom: 1px solid rgba($greyish-brown, 0.1);
+
+  @media ($tablet) {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+  }
 }
 
 .page-footer__social {
-  margin: 0 0 0 -12px;
+  margin: 0 0 0 -10px;
 }
 
 .page-footer__copyrights {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }

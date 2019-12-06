@@ -1,4 +1,9 @@
 .catalog-additional__heading {
-  margin-left: 20px;
   margin-bottom: 34px;
+  margin-left: 20px;
+
+  @media ($tablet) {
+    margin-bottom: 79px;
+    margin-left: 0;
+  }
 }

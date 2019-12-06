@@ -1,12 +1,22 @@
 .main-nav {
   margin: 0;
   padding: 0;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1;
-  font-family: $alter-font-stack;
-  text-align: center;
   color: $black-three;
+
+  @media ($tablet) {
+    display: flex;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media ($desktop) {
+    width: $desk-container-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 53px;
+  }
 }
 
 .main-nav__top {
@@ -15,38 +25,99 @@
   padding: 11px 20px 15px;
 
   border-bottom: 1px solid #e6e6e6;
+
+  @media ($tablet) {
+    flex-shrink: 0;
+    margin-right: 94px;
+    padding: 0 0 0 0;
+    border: none;
+  }
 }
 
 .main-nav__menu-toggler {
   display: block;
-  width: 25px;
+  width: 28px;
   height: 19px;
   margin-top: 12px;
-  margin-right: 3px;
   padding: 0;
 
   background-color: transparent;
   background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   border: none;
 
   cursor: pointer;
 
+  @media ($tablet) {
+    display: none;
+  }
+
   &--opened {
-    width: 19px;
+    width: 25px;
     height: 19px;
     background-image: url("../img/icon-close.svg");
+    background-size: 19px 19px;
   }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  font-family: $alter-font-stack;
+  text-align: center;
+
   list-style: none;
+
+  @media ($tablet) {
+    margin-bottom: -15px;
+    padding-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  @media ($desktop) {
+    margin-left: auto;
+    padding-top: 21px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  &--contrast-lightness {
+    @media ($desktop) {
+      color: #ffffff;
+
+      & .main-nav__link--current::after {
+        background-color: currentColor;
+      }
+    }
+  }
 }
 
 .main-nav__item {
   padding: 24px 20px 21px;
   border-bottom: 1px solid #e6e6e6;
+
+  @media ($tablet) {
+    margin-right: 35px;
+    margin-bottom: 15px;
+    padding: 0 0 10px 0;
+    border: none;
+  }
+
+  &:last-of-type {
+    @media ($tablet) {
+      margin-right: 0;
+    }
+  }
 }
 
 .main-nav__link {
@@ -61,6 +132,30 @@
 
     &:active {
       opacity: 0.3;
+    }
+  }
+
+  &--current {
+    @media ($tablet) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 1px;
+        bottom: -9px;
+        left: 1px;
+
+        height: 2px;
+
+        background-color: $leaf;
+
+        @media ($desktop) {
+          bottom: -7px;
+          right: 1px;
+          left: 2px;
+        }
+      }
     }
   }
 }

@@ -7,16 +7,46 @@
   &--h2 {
     font-size: 36px;
     line-height: 60px;
+
+    @media ($tablet) {
+      font-size: 60px;
+      line-height: 1;
+    }
   }
 
   &--h3 {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1;
+
+    @media ($tablet) {
+      font-size: 36px;
+      line-height: 1;
+    }
   }
 
   &--line-style {
     position: relative;
     display: flex;
+
+    &::before {
+      @media ($tablet) {
+        content: "";
+        align-self: center;
+        height: 3px;
+        margin-right: 39px;
+
+        flex-shrink: 0;
+        width: 28px;
+
+        background-color: $leaf;
+        transform: translateY(4px);
+      }
+
+      @media ($desktop) {
+        width: 70px;
+        transform: translateY(5px);
+      }
+    }
 
     &::after {
       content: "";
@@ -30,6 +60,15 @@
 
       background-color: $leaf;
       transform: translateY(3px);
+
+      @media ($tablet) {
+        margin-left: 37px;
+        transform: translateY(4px);
+      }
+
+      @media ($desktop) {
+        transform: translateY(5px);
+      }
     }
   }
 }

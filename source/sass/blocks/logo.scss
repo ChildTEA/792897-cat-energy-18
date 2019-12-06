@@ -16,8 +16,23 @@
   width: 191px;
   height: 39px;
 
+  @media ($tablet) {
+    width: 174px;
+    height: 59px;
+  }
+
+  @media ($desktop) {
+    width: 203px;
+    height: 60px;
+  }
+
   &--simple {
     width: 128px;
     height: 24px;
+
+    @media ($tablet) {
+      width: 128px;
+      height: 24px;
+    }
   }
 }

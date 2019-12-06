@@ -1,11 +1,42 @@
 .contacts {
   margin-bottom: 0;
   padding: 29px 0 0;
+
+  &--alter {
+    background-color: $white-two;
+  }
+
+  @media ($tablet) {
+    padding-top: 64px;
+  }
+
+  @media ($desktop) {
+    padding-top: 0;
+    position: relative;
+  }
 }
 
 .contacts__info {
   display: flex;
   margin-bottom: 25px;
+
+  @media ($tablet) {
+    padding-right: 41px;
+    padding-left: 41px;
+    margin-bottom: 51px;
+  }
+
+  @media ($desktop) {
+    position: absolute;
+    top: 93px;
+    left: 110px;
+
+    box-sizing: border-box;
+    width: 570px;
+    padding: 66px 76px 58px 76px;
+
+    background-color: #ffffff;
+  }
 }
 
 .contacts__lead {
@@ -19,6 +50,19 @@
   font-family: $alter-font-stack;
   color: $black-three;
   text-transform: uppercase;
+
+  @media ($tablet) {
+    width: 35%;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @media ($desktop) {
+    width: 150px;
+    margin-right: 100px;
+    padding-top: 2px;
+  }
 }
 
 .contacts__address {
@@ -26,6 +70,36 @@
   padding: 0;
 
   font-style: normal;
-  font-size: 14px;
   line-height: 20px;
+
+  @media ($tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media ($desktop) {
+    width: 220px;
+    text-align: left;
+  }
+
+  &::first-letter {
+    @media ($desktop) {
+      text-transform: lowercase;
+    }
+  }
+}
+
+.contacts__address-part {
+  &--PP {
+    @media ($tablet) {
+      margin-top: 19px;
+    }
+  }
+}
+
+.contacts__map {
+  background-color: #0f000f;
 }

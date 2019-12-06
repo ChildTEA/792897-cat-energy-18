@@ -1,15 +1,23 @@
 .copyrights {
   display: flex;
   padding: 22px 0 10px;
+
+  @media ($tablet) {
+    padding: 0;
+  }
 }
 
 .copyrights__text {
-  padding-top: 8px;
+  padding-top: 9px;
 
   font-size: 16px;
   line-height: 1;
   color: $greyish-brown;
   text-decoration: none;
+
+  @media ($tablet) {
+    margin-right: 23px;
+  }
 
   &:hover,
   &:focus {
@@ -31,6 +39,7 @@
 }
 
 .copyrights__logo-academy {
+  display: block;
   color: $brownish-grey;
 
   &:hover,
@@ -47,6 +56,7 @@
   }
 
   & svg {
+    display: block;
     fill: currentColor;
   }
 }

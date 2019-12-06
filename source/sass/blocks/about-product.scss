@@ -1,9 +1,26 @@
 .about-product {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+  padding-bottom: 10px;
+
+  @media ($tablet) {
+    margin-bottom: 38px;
+    padding-bottom: 57px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    border: none;
+  }
 }
 
 .about-product__heading {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+
+  @media ($tablet) {
+    margin-bottom: 72px;
+  }
 }
 
 .about-product__list {
@@ -11,41 +28,97 @@
   margin-bottom: 0;
   padding: 0;
   list-style: none;
+
+  counter-reset: item-counter;
+
+  @media ($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .about-product__item {
   position: relative;
 
+  box-sizing: border-box;
   min-height: 60px;
   margin: 0 0 20px 0;
-  padding: 0 0 0 80px;
+  padding: 2px 0 0 80px;
+
+  counter-increment: item-counter;
+
+  @media ($tablet) {
+    flex-shrink: 0;
+    width: calc(50% - 30px);
+    min-height: 229px;
+    margin-bottom: 88px;
+    padding: 112px 65px 45px 0;
+  }
+
+  @media ($desktop) {
+    width: 245px;
+    padding: 112px 0 60px 0;
+    margin-bottom: 80px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:nth-last-of-type(-n + 2) {
+    @media ($tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-last-of-type(-n + 4) {
+    @media ($desktop) {
+      margin-bottom: 0;
+    }
+  }
 
   &::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: 0;
+    @media ($tablet) {
+      content: counter(item-counter);
+      position: absolute;
+      top: -39px;
+      right: 91px;
+      z-index: -1;
 
-    width: 60px;
-    height: 60px;
-    background-color: $leaf;
+      width: 120px;
+
+      font-size: 281px;
+      line-height: 1;
+      font-family: $alter-font-stack;
+      text-align: center;
+      color: $white-two;
+    }
+
+    @media ($desktop) {
+      top: -40px;
+      right: 13px;
+    }
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: -2px;
+    top: 0;
     left: 0;
 
     width: 60px;
     height: 60px;
 
+    background-color: $leaf;
     background-repeat: no-repeat;
     background-position: center;
-  }
 
-  &:last-of-type {
-    margin-bottom: 0;
+    @media ($tablet) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--ecology {
