@@ -427,6 +427,20 @@
     font-size: 20px;
   }
 
+  &:hover,
+  &:focus {
+    padding-right: 56px;
+
+    &::after {
+      width: 33px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     position: absolute;
