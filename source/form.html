@@ -11,19 +11,19 @@
 <body class="page">
 
   <header class="page-header">
-    <nav class="page-header__nav main-nav">
+    <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__top">
         <a class="main-nav__logo-wrapper logo" href="index.html">
           <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип «Кэт энерджи»" width="191" height="39">
         </a>
-        <button class="main-nav__menu-toggler main-nav__menu-toggler--opened" type="button">
+        <button class="main-nav__menu-toggler" type="button">
           <span class="visually-hidden">
             Переключить видимость меню.
           </span>
         </button>
       </div>
 
-      <ul class="main-nav__list dropdown">
+      <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">
             Главная
@@ -148,6 +148,8 @@
       </p>
     </div>
   </footer>
+
+  <script src="sass/blocks/main-nav.js"></script>
 </body>
 
 </html>
