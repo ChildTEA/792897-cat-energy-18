@@ -43,5 +43,14 @@
   &--light {
     color: $greyish-brown;
     background-color: $white-two;
+
+    &:hover,
+    &:focus {
+      background-color: $white-three;
+    }
+
+    &:active {
+      color: rgba($greyish-brown, 0.3);
+    }
   }
 }
