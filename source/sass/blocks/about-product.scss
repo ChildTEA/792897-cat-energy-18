@@ -140,24 +140,44 @@
   &--ecology {
     &::after {
       background-image: url("../img/advantage-leaf@1x.png");
+
+      @media ($retina-2) {
+        background-image: url("../img/advantage-leaf@2x.png");
+        background-size: 50px auto;
+      }
     }
   }
 
   &--add-water {
     &::after {
       background-image: url("../img/advantage-powder@1x.png");
+
+      @media ($retina-2) {
+        background-image: url("../img/advantage-powder@2x.png");
+        background-size: 50px auto;
+      }
     }
   }
 
   &--meal {
     &::after {
       background-image: url("../img/advantage-dining@1x.png");
+
+      @media ($retina-2) {
+        background-image: url("../img/advantage-dining@2x.png");
+        background-size: 50px auto;
+      }
     }
   }
 
   &--duration {
     &::after {
       background-image: url("../img/advantage-clock@1x.png");
+
+      @media ($retina-2) {
+        background-image: url("../img/advantage-clock@2x.png");
+        background-size: 50px auto;
+      }
     }
   }
 }
