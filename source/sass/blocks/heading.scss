@@ -36,14 +36,15 @@
         margin-right: 39px;
 
         flex-shrink: 0;
-        width: 28px;
+        min-width: 28px;
 
         background-color: $leaf;
         transform: translateY(4px);
       }
 
       @media ($desktop) {
-        width: 70px;
+        min-width: 28px;
+        width: calc(50% - 650px);
         transform: translateY(5px);
       }
     }
@@ -56,7 +57,7 @@
 
       flex-grow: 1;
       flex-shrink: 0;
-      width: 52px;
+      min-width: 52px;
 
       background-color: $leaf;
       transform: translateY(3px);
@@ -67,6 +68,8 @@
       }
 
       @media ($desktop) {
+        min-width: 52px;
+        width: calc(50% - 650px);
         transform: translateY(5px);
       }
     }
