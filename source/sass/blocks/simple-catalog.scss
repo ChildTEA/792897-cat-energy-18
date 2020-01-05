@@ -1,0 +1,122 @@
+.simple-catalog {
+  border-collapse: collapse;
+}
+
+.simple-catalog__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.simple-catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -1px;
+
+  border-top: 1px solid $pinkish-grey;
+  border-bottom: 1px solid $pinkish-grey;
+
+  @media ($tablet) {
+    padding: 25px 35px 27px 39px;
+    border-top-color: rgba($pinkish-grey, 0.5);
+    border-bottom-color: rgba($pinkish-grey, 0.5);
+  }
+
+  @media ($desktop) {
+    padding: 14px 0 1px;
+    border-top-color: $pinkish-grey;
+    border-bottom-color: $pinkish-grey;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.simple-catalog__title {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 11px;
+
+  font-size: 16px;
+  line-height: 1;
+  font-family: $alter-font-stack;
+  text-transform: uppercase;
+  color: $black-three;
+
+  @media ($tablet) {
+    width: 60%;
+    margin-right: auto;
+    margin-bottom: 26px;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  @media ($desktop) {
+    width: 285px;
+    margin-right: 40px;
+    padding-top: 10px;
+  }
+}
+
+.simple-catalog__volume {
+  box-sizing: border-box;
+  width: calc(50% - 5px);
+  margin-right: 10px;
+  margin-bottom: 9px;
+
+  @media ($tablet) {
+    width: calc(25% - 5px);
+    margin-right: 0;
+    margin-bottom: 19px;
+    padding-top: 2px;
+    text-align: right;
+  }
+
+  @media ($desktop) {
+    width: 205px;
+    margin-right: 40px;
+    padding-top: 12px;
+    text-align: left;
+  }
+}
+
+.simple-catalog__price {
+  box-sizing: border-box;
+  width: calc(50% - 5px);
+  margin-bottom: 9px;
+  text-align: right;
+
+  @media ($tablet) {
+    width: calc(15% - 1px);
+    margin-bottom: 19px;
+    margin-left: auto;
+  }
+
+  @media ($desktop) {
+    width: 60px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding-top: 12px;
+    text-align: left;
+  }
+}
+
+.simple-catalog__order {
+  width: 100%;
+  margin-bottom: 17px;
+  padding: 2px 0 0;
+
+  @media ($tablet) {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media ($desktop) {
+    flex-shrink: 0;
+    width: 245px;
+  }
+}
+
+.simple-catalog__order-button {
+  display: block;
+}
