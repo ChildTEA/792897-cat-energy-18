@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи. Каталог продукции</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page">
@@ -431,16 +431,104 @@
         Дополнительные товары
       </h2>
 
-      <!-- Здесь будут дополнительные товары -->
-      <div class="catalog-additional__patch-wrapper">
-        <picture>
-          <source media="(min-width: 1280px)" srcset="https://via.placeholder.com/1440x376/0FAA0F/FFFFFF/?text=Additional_goods">
-          <source media="(min-width: 768px)" srcset="https://via.placeholder.com/768x903/0FAA0F/FFFFFF/?text=Additional_goods">
-          <img class="catalog-additional__patch" src="https://via.placeholder.com/320x880/0FAA0F/FFFFFF/?text=Additional_goods" alt="Временная заплатка для дополнительных товаров">
-        </picture>
+      <div class="catalog-additional__container container">
+        <table class="catalog-additional__list simple-catalog">
+          <thead class="visually-hidden">
+            <th scope="col">
+              Наименование
+            </th>
+            <th scope="col">
+              Объём
+            </th>
+            <th scope="col">
+              Цена
+            </th>
+            <th scope="col">
+              Быстный заказ
+            </th>
+          </thead>
+          <tbody class="simple-catalog__body">
+            <tr class="simple-catalog__item">
+              <td class="simple-catalog__title">
+                Сахарозаменитель
+              </td>
+              <td class="simple-catalog__volume">
+                1 упаковка (100 г)
+              </td>
+              <td class="simple-catalog__price">
+                200 Р.
+              </td>
+              <td class="simple-catalog__order">
+                <a class="simple-catalog__order-button button button--alter">
+                  Заказать
+                </a>
+              </td>
+            </tr>
 
+            <tr class="simple-catalog__item">
+              <td class="simple-catalog__title">
+                Питьевая вода
+              </td>
+              <td class="simple-catalog__volume">
+                5 литров
+              </td>
+              <td class="simple-catalog__price">
+                50 Р.
+              </td>
+              <td class="simple-catalog__order">
+                <a class="simple-catalog__order-button button button--alter">
+                  Заказать
+                </a>
+              </td>
+            </tr>
+
+            <tr class="simple-catalog__item">
+              <td class="simple-catalog__title">
+                Молоко
+              </td>
+              <td class="simple-catalog__volume">
+                1 литр
+              </td>
+              <td class="simple-catalog__price">
+                100 Р.
+              </td>
+              <td class="simple-catalog__order">
+                <a class="simple-catalog__order-button button button--alter">
+                  Заказать
+                </a>
+              </td>
+            </tr>
+
+            <tr class="simple-catalog__item">
+              <td class="simple-catalog__title">
+                Витамины
+              </td>
+              <td class="simple-catalog__volume">
+                1 упаковка (30 г)
+              </td>
+              <td class="simple-catalog__price">
+                300 Р.
+              </td>
+              <td class="simple-catalog__order">
+                <a class="simple-catalog__order-button button button--alter">
+                  Заказать
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="catalog-additional__promo">
+          <p class="catalog-additional__promo-icon">
+            <svg width="56" height="61">
+              <use xlink:href="img/sprite.svg#icon-gift"></use>
+            </svg>
+          </p>
+          <p class="catalog-additional__promo-text">
+            Закажите все и&nbsp;получите&nbsp;чехол&nbsp;для кота в подарок!
+          </p>
+        </div>
       </div>
-      <!-- ^^^ Конец дополнительных товаров ^^^ -->
     </section>
 
     <section class="contacts contacts--alter">
@@ -534,7 +622,7 @@
   <script src="js/picturefill.js"></script>
   <script src="js/svg4everybody.js"></script>
   <script>svg4everybody();</script>
-  <script src="sass/blocks/main-nav.js"></script>
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>
