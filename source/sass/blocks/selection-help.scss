@@ -1,3 +1,148 @@
+.selection-help__heading {
+  margin-bottom: 34px;
+  margin-left: 20px;
+
+  @media ($tablet) {
+    margin-left: 0;
+    margin-bottom: 74px;
+  }
+
+  &--PP {
+    @media ($tablet) {
+      margin-bottom: 55px;
+    }
+  }
+}
+
 .selection-help__form {
-  background-color: #0faa0f;
+  margin-bottom: 32px;
+
+  @media ($tablet) {
+    margin-bottom: 51px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.selection-help__intro {
+  margin: 0 20px 39px;
+
+  @media ($tablet) {
+    margin: 0 70px 67px;
+  }
+
+  @media ($desktop) {
+    @include desktop-container;
+  }
+}
+
+.selection-help__columns {
+  margin-bottom: 28px;
+
+  @media ($tablet) {
+    margin-right: 67px;
+    margin-bottom: 77px;
+    margin-left: 70px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 71px;
+
+    @include desktop-container;
+  }
+}
+
+.selection-help__introduce {
+  margin: 0 0 23px;
+  padding: 0 20px;
+
+  @media ($tablet) {
+    margin-bottom: 72px;
+    padding: 0;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.selection-help__programms {
+  margin: 0;
+}
+
+.selection-help__contacts {
+  margin-right: 20px;
+  margin-bottom: 28px;
+  margin-left: 20px;
+  padding: 0;
+
+  @media ($tablet) {
+    margin-right: 65px;
+    margin-bottom: 67px;
+    margin-left: 72px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 70px;
+
+    @include desktop-container;
+  }
+}
+
+.selection-help__comment {
+  margin-right: 20px;
+  margin-bottom: 26px;
+  margin-left: 20px;
+
+  @media ($tablet) {
+    margin-right: 67px;
+    margin-left: 70px;
+    margin-bottom: 62px;
+  }
+
+  @media ($desktop) {
+    @include desktop-container;
+  }
+}
+
+.selection-help__additional {
+  margin-right: 20px;
+  margin-bottom: 33px;
+  margin-left: 20px;
+
+  @media ($tablet) {
+    margin-right: 43px;
+    margin-left: 70px;
+    margin-bottom: 54px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 63px;
+
+    @include desktop-container;
+  }
+}
+
+.selection-help__form-footer {
+  margin-right: 20px;
+  margin-left: 20px;
+
+  @media ($tablet) {
+    margin-right: 71px;
+    margin-left: 71px;
+  }
+
+  @media ($desktop) {
+    @include desktop-container;
+  }
+}
+
+.selection-help__notation {
+  margin: 0 20px;
+
+  @media ($tablet) {
+    margin: 0;
+  }
 }

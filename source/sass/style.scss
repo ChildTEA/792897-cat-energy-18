@@ -1,6 +1,6 @@
 // Global
 @import "variables";
-// @import "mixins";
+@import "mixins";
 @import "helpers";
 @import "global";
 @import "fonts";
@@ -26,4 +26,5 @@
 @import "blocks/catalog-additional.scss";
 @import "blocks/selection-help.scss";
 @import "blocks/simple-catalog.scss";
+@import "blocks/form";
 // @import "blocks/";
