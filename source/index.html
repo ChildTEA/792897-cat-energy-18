@@ -134,47 +134,83 @@
         Живой пример
       </h2>
 
-      <div class="example__inner container">
-        <p class="example__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-
-        <div class="example__results ">
-          <dl class="example__table simple-table">
-            <div class="simple-table__cell">
-              <dt class="simple-table__value">
-                5 кг
-              </dt>
-              <dd class="simple-table__description">
-                снижение веса
-              </dd>
-            </div>
-
-            <div class="simple-table__cell">
-              <dt class="simple-table__value">
-                60 дней
-              </dt>
-              <dd class="simple-table__description">
-                затрачено времени
-              </dd>
-            </div>
-          </dl>
-
-          <p class="example__total-cost">
-            <span class="example__total-cost-string">Затраты на питание:</span><span class="example__total-cost-string"> 15 000 руб.</span>
+      <div class="example__inner">
+        <div class="container">
+          <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
+
+          <div class="example__results">
+            <dl class="example__table simple-table">
+              <div class="simple-table__cell">
+                <dt class="simple-table__value">
+                  5 кг
+                </dt>
+                <dd class="simple-table__description">
+                  снижение веса
+                </dd>
+              </div>
+
+              <div class="simple-table__cell">
+                <dt class="simple-table__value">
+                  60 дней
+                </dt>
+                <dd class="simple-table__description">
+                  затрачено времени
+                </dd>
+              </div>
+            </dl>
+
+            <p class="example__total-cost">
+              <span class="example__total-cost-string">Затраты на питание:</span><span class="example__total-cost-string"> 15 000 руб.</span>
+            </p>
+          </div>
         </div>
       </div>
 
-      <!-- Здесь будет слайдер До/После -->
       <div class="example__slider diff-slider">
-        <picture>
-          <source media="(min-width: 1280px)" srcset="https://via.placeholder.com/700x592/0F000F/FFFFFF/?text=It%27s_a_cat_slider">
-          <source media="(min-width: 768px)" srcset="https://via.placeholder.com/768x691/0F000F/FFFFFF/?text=It%27s_a_cat_slider">
-          <img class="diff-slider__patch" src="https://via.placeholder.com/320x334/0F000F/FFFFFF/?text=It%27s_a_cat_slider" alt="Временная заплатка под слайдер">
-        </picture>
+        <ul class="diff-slider__items">
+          <li class="diff-slider__item diff-slider__item--before">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="../img/before-desktop@1x.webp 1x, ../img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="../img/before-tablet@1x.webp 1x, ../img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="../img/before-mobile@1x.webp 1x, ../img/before-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="../img/before-desktop@1x.png 1x, ../img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="../img/before-tablet@1x.png 1x, ../img/before-tablet@2x.png 2x">
+              <source srcset="../img/before-mobile@1x.png 1x, ../img/before-mobile@2x.png 2x">
+              <img src="../img/before-mobile@1x.png" alt="Фото «было»" width="311" height="232">
+            </picture>
+          </li>
+          <li class="diff-slider__item diff-slider__item--after">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="../img/after-desktop@1x.webp 1x, ../img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="../img/after-tablet@1x.webp 1x, ../img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="../img/after-mobile@1x.webp 1x, ../img/after-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="../img/after-desktop@1x.png 1x, ../img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="../img/after-tablet@1x.png 1x, ../img/after-tablet@2x.png 2x">
+              <source srcset="../img/after-mobile@1x.png 1x, ../img/after-mobile@2x.png 2x">
+              <img src="../img/after-mobile@1x.png" alt="Фото «стало»" width="311" height="232">
+            </picture>
+          </li>
+        </ul>
+        <div class="diff-slider__control-panel">
+          <button class="diff-slider__control-button diff-slider__control-button--before diff-slider__control-button diff-slider__control-button--active">
+            Было
+          </button>
+          <div class="diff-slider__scale">
+            <input class="diff-slider__input" type="range" min="0" max="100" step="1" value="0">
+            <span class="visually-hidden">
+              Изменить соотношение изображений
+            </span>
+            <span class="diff-slider__pin"></span>
+          </div>
+          <button class="diff-slider__control-button diff-slider__control-button--after">
+            Стало
+          </button>
+        </div>
       </div>
-      <!-- ^^^ Конец слайдера ^^^ -->
     </section>
 
     <section class="contacts">
@@ -228,7 +264,7 @@
           <li class="social__item">
             <a class="social__link" href="#nowhere">
               <i class="social__icon social__icon--inst" role="presentation" aria-hidden="true">
-                <svg  width="17" height="17">
+                <svg width="17" height="17">
                   <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </i>
