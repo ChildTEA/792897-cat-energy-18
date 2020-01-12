@@ -179,6 +179,28 @@
   }
 }
 
+.form__label--radio-couple:hover .form__control-indicator,
+.form__radio-input:focus + .form__control-indicator {
+  border-color: #bababa;
+}
+
+.form__label--radio-couple:active,
+.form__radio-input:active + .form__control-indicator,
+.form__radio-input:active ~ .form__label-text {
+  opacity: 0.3;
+}
+
+.form__label--check-couple:hover .form__control-indicator,
+.form__checkbox-input:focus + .form__control-indicator {
+  border-color: #bababa;
+}
+
+.form__label--check-couple:active,
+.form__checkbox-input:active + .form__control-indicator,
+.form__checkbox-input:active ~ .form__label-text {
+  opacity: 0.3;
+}
+
 .form__label-text {
   align-self: center;
 }
@@ -196,6 +218,39 @@
     margin-left: 17px;
     padding: 9px 18px 11px;
   }
+
+  &--error {
+    padding: 12px 13px 11px;
+    border-width: 2px;
+    border-color: $peachy-pink;
+
+    @media ($tablet) {
+      padding: 8px 17px 10px;
+    }
+  }
+
+  &:hover {
+    border-color: $pinkish-grey;
+  }
+
+  &:focus {
+    padding: 12px 13px 11px;
+    border-width: 2px;
+    border-color: $greyish-brown;
+    outline: none;
+
+    @media ($tablet) {
+      padding: 8px 17px 10px;
+    }
+  }
+}
+
+.form__text-input:focus + .form__input-icon {
+  fill: $leaf;
+}
+
+.form__text-input--error + .form__input-icon {
+  fill: $peachy-pink;
 }
 
 .form__radio-input + .form__control-indicator {
@@ -285,6 +340,21 @@
 
   &::placeholder {
     color: inherit;
+  }
+
+  &:hover {
+    border-color: $pinkish-grey;
+  }
+
+  &:focus {
+    padding: 13px 9px 9px 12px;
+    border-width: 2px;
+    border-color: $greyish-brown;
+    outline: none;
+
+    @media ($tablet) {
+      padding: 9px 17px;
+    }
   }
 }
 
