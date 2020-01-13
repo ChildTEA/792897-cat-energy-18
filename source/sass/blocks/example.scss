@@ -134,7 +134,7 @@
   @media ($desktop) {
     position: absolute;
     bottom: 0;
-    left: calc(50% - 50px);
-    width: 650px;
+    right: 0;
+    width: calc(50% + 70px);
   }
 }

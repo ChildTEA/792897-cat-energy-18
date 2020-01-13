@@ -50,6 +50,12 @@
         width: 690px;
         height: 517px;
       }
+
+      @media ($desktop) {
+        left: 50%;
+        max-width: none;
+        transform: translateX(-365px);
+      }
     }
   }
 
@@ -71,6 +77,11 @@
       @media ($tablet) {
         right: calc(50% - 160px);
         max-width: none;
+      }
+
+      @media ($desktop) {
+        left: 0;
+        transform: translateX(-365px);
       }
     }
   }
