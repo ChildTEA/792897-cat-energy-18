@@ -228,15 +228,7 @@
         </address>
       </div>
 
-      <!-- Здесь будет интерактивная карта -->
-      <div class="contacts__map">
-        <picture>
-          <source media="(min-width: 1280px)" srcset="https://via.placeholder.com/1440x400/0F000F/FFFFFF/?text=It%27s_a_map">
-          <source media="(min-width: 768px)" srcset="https://via.placeholder.com/768x402/0F000F/FFFFFF/?text=It%27s_a_map">
-          <img class="contacts__map-patch" src="https://via.placeholder.com/320x362/0F000F/FFFFFF/?text=It%27s_a_map" alt="Пременная заплатка для карты">
-        </picture>
-      </div>
-      <!-- ^^^ Конец интерактивной карты ^^^ -->
+      <div class="contacts__map" id="map"></div>
     </section>
   </main>
 
@@ -305,6 +297,8 @@
   <script src="js/svg4everybody.js"></script>
   <script>svg4everybody();</script>
   <script src="js/main-nav.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=100fa3f9-2700-43e8-b434-0380070e344d&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/ymap.js"></script>
 </body>
 
 </html>

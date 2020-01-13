@@ -23,7 +23,7 @@
   @media ($tablet) {
     padding-right: 41px;
     padding-left: 41px;
-    margin-bottom: 51px;
+    margin-bottom: 56px;
   }
 
   @media ($desktop) {
@@ -101,5 +101,13 @@
 }
 
 .contacts__map {
-  background-color: #0f000f;
+  height: 362px;
+
+  @media ($tablet) {
+    height: 396px;
+  }
+
+  @media ($desktop) {
+    height: 399px;
+  }
 }
