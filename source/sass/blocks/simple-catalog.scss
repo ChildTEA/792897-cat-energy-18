@@ -22,7 +22,7 @@
   }
 
   @media ($desktop) {
-    padding: 14px 0 1px;
+    padding: 14px 0 11px;
     border-top-color: $pinkish-grey;
     border-bottom-color: $pinkish-grey;
   }
@@ -33,6 +33,7 @@
 }
 
 .simple-catalog__title {
+  display: inline-flex;
   width: 100%;
   padding-top: 13px;
   padding-bottom: 11px;
@@ -54,37 +55,44 @@
   @media ($desktop) {
     width: 285px;
     margin-right: 40px;
+    margin-bottom: 0;
     padding-top: 10px;
   }
 }
 
 .simple-catalog__volume {
+  display: inline-flex;
   box-sizing: border-box;
   width: calc(50% - 5px);
   margin-right: 10px;
   margin-bottom: 9px;
 
   @media ($tablet) {
+    justify-content: flex-end;
     width: calc(25% - 5px);
     margin-right: 0;
     margin-bottom: 19px;
     padding-top: 2px;
-    text-align: right;
+    // text-align: right;
   }
 
   @media ($desktop) {
+    justify-content: flex-start;
     width: 205px;
     margin-right: 40px;
+    margin-bottom: 0;
     padding-top: 12px;
-    text-align: left;
+    // text-align: left;
   }
 }
 
 .simple-catalog__price {
+  display: inline-flex;
+  justify-content: flex-end;
   box-sizing: border-box;
   width: calc(50% - 5px);
   margin-bottom: 9px;
-  text-align: right;
+  // text-align: right;
 
   @media ($tablet) {
     width: calc(15% - 1px);
@@ -93,15 +101,18 @@
   }
 
   @media ($desktop) {
+    justify-content: flex-start;
     width: 60px;
     margin-left: 0;
     margin-right: 20px;
+    margin-bottom: 0;
     padding-top: 12px;
-    text-align: left;
+    // text-align: left;
   }
 }
 
 .simple-catalog__order {
+  display: inline-flex;
   width: 100%;
   margin-bottom: 17px;
   padding: 2px 0 0;
@@ -118,5 +129,6 @@
 }
 
 .simple-catalog__order-button {
+  width: 100%;
   display: block;
 }
