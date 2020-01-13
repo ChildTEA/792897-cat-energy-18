@@ -62,4 +62,8 @@
     font-size: 14px;
     background-color: #ffffff;
   }
+
+  @media ($desktop) {
+    background-color: $white-two;
+  }
 }
