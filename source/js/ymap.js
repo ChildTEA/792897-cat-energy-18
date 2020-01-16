@@ -5,7 +5,7 @@ function init(){
     // center: [59.938824, 30.323138],
     center: [59.938714, 30.323004],
     zoom: 17,
-    controls: []
+    controls: ['zoomControl']
   });
 
   var myPlacemark = new ymaps.Placemark([59.938714, 30.323004], {
