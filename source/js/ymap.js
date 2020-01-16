@@ -1,12 +1,14 @@
 ymaps.ready(init);
 
 function init(){
-  var myMap = new ymaps.Map("map", {
-    center: [59.938631, 30.323055],
-    zoom: 16
+  var myMap = new ymaps.Map('map', {
+    // center: [59.938824, 30.323138],
+    center: [59.938714, 30.323004],
+    zoom: 17,
+    controls: []
   });
 
-  var myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
+  var myPlacemark = new ymaps.Placemark([59.938714, 30.323004], {
     balloonContentHeader: 'CatEnergy',
     balloonContentBody: 'Ул. Большая Конюшенная, д.&nbsp;19/8',
     hintContent: 'Мы находимся здесь'
@@ -14,16 +16,11 @@ function init(){
   {
     iconLayout: 'default#image',
     iconImageHref: 'img/map-pin.png',
-    iconImageSize: [55, 53],
-    // Смещение левого верхнего угла иконки относительно
-    // её "ножки" (точки привязки).
-    iconImageOffset: [-5, -38]
+    iconImageSize: [55, 47],
+    iconImageOffset: [-27.5, -47]
   });
 
-myMap.geoObjects.add(myPlacemark);
-myMap.behaviours.disable([
-  'drag',
-  'scrollZoom',
-  'leftMouseButtonMagnifier'
-]);
+
+  myMap.geoObjects.add(myPlacemark);
+  myMap.behaviors.disable('scrollZoom');
 }
