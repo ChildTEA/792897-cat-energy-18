@@ -181,6 +181,8 @@
 }
 
 .product-card__show-more-text {
+  box-sizing: border-box;
+  max-width: 100%;
   margin-top: 0;
   margin-bottom: 7px;
   padding: 0;
@@ -208,6 +210,8 @@
 }
 
 .product-card__show-more-tip {
+  box-sizing: border-box;
+  max-width: 100%;
   margin-top: 0;
   margin-bottom: 21px;
   padding: 0;
