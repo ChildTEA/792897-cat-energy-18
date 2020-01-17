@@ -12,10 +12,12 @@ var del = require('del');
 var imagemin = require('gulp-imagemin');
 var webp = require('gulp-webp');
 var svgstore = require('gulp-svgstore');
+var htmlmin = require('gulp-htmlmin');
 var browserSync = require('browser-sync').create();
 
 gulp.task('html', function () {
   return gulp.src('source/*.html')
+  .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest('build'));
 });
 
