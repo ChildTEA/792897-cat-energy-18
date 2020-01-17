@@ -112,3 +112,30 @@
     height: 399px;
   }
 }
+
+.contacts__map-fallback {
+  display: none;
+
+  &--nojs {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+.contacts__map-fallback img {
+  width: 320px;
+  height: 362px;
+  margin: 0;
+  padding: 0;
+
+  @media ($tablet) {
+    width: 762px;
+    height: 396px;
+  }
+
+  @media ($desktop) {
+    width: 100%;
+    max-width: 1440px;
+    height: 399px;
+  }
+}
