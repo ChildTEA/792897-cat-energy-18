@@ -19,5 +19,9 @@
 
   &--PP {
     margin-bottom: 28px;
+
+    @media ($tablet) {
+      margin-bottom: 53px;
+    }
   }
 }

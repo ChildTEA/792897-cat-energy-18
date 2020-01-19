@@ -34,6 +34,9 @@
   }
 
   @media ($desktop) {
+    margin-bottom: 66px;
+    padding-top: 2px;
+
     @include desktop-container;
   }
 }
