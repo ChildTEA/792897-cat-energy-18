@@ -31,12 +31,12 @@
     &::before {
       @media ($tablet) {
         content: "";
-        align-self: center;
-        height: 3px;
-        margin-right: 39px;
-
         flex-shrink: 0;
         min-width: 28px;
+        height: 3px;
+        margin-top: 0.45em;
+        margin-right: 39px;
+
 
         background-color: $leaf;
         transform: translateY(4px);
@@ -51,13 +51,13 @@
 
     &::after {
       content: "";
-      align-self: center;
-      height: 3px;
-      margin-left: 22px;
-
       flex-grow: 1;
       flex-shrink: 0;
       min-width: 52px;
+      height: 3px;
+      margin-top: 0.45em;
+      margin-left: 22px;
+
 
       background-color: $leaf;
       transform: translateY(3px);

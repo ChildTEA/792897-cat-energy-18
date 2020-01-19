@@ -62,11 +62,11 @@
       background-image: url("../img/index-can-tablet@1x.jpg");
       background-repeat: no-repeat;
       background-position: center;
+    }
 
-      @media ($retina-2) {
-        background-image: url("../img/index-can-tablet@2x.jpg");
-        background-size: 709px auto;
-      }
+    @media ($tablet) and ($retina-2) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: 709px auto;
     }
 
     @media ($desktop) {
@@ -78,11 +78,11 @@
       height: 499px;
 
       background-image: url("../img/index-can-desktop@1x.png");
+    }
 
-      @media ($retina-2) {
-        background-image: url("../img/index-can-desktop@2x.png");
-        background-size: 552px auto;
-      }
+    @media ($desktop) and ($retina-2) {
+      background-image: url("../img/index-can-desktop@2x.png");
+      background-size: 552px auto;
     }
   }
 }
@@ -154,6 +154,7 @@
 
     @media ($tablet) {
       content: none;
+      background-image: none;
     }
   }
 }
@@ -296,7 +297,7 @@
       width: 35px;
       height: 49px;
 
-      background-image: url("../img/icon-cat-slim.svg");
+      background-image: url("../img/cat-slim.svg");
       background-repeat: no-repeat;
 
       @media ($tablet) {
@@ -326,7 +327,7 @@
       width: 67px;
       height: 28px;
 
-      background-image: url("../img/icon-cat-pro.svg");
+      background-image: url("../img/cat-pro.svg");
       background-repeat: no-repeat;
 
       @media ($tablet) {

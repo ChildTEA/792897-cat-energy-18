@@ -23,13 +23,14 @@
   @media ($tablet) {
     padding-right: 41px;
     padding-left: 41px;
-    margin-bottom: 51px;
+    margin-bottom: 56px;
   }
 
   @media ($desktop) {
     position: absolute;
     top: 93px;
     left: 110px;
+    z-index: 3001;
 
     box-sizing: border-box;
     width: 570px;
@@ -101,5 +102,40 @@
 }
 
 .contacts__map {
-  background-color: #0f000f;
+  height: 362px;
+
+  @media ($tablet) {
+    height: 396px;
+  }
+
+  @media ($desktop) {
+    height: 399px;
+  }
+}
+
+.contacts__map-fallback {
+  display: none;
+
+  &--nojs {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+.contacts__map-fallback img {
+  width: 320px;
+  height: 362px;
+  margin: 0;
+  padding: 0;
+
+  @media ($tablet) {
+    width: 762px;
+    height: 396px;
+  }
+
+  @media ($desktop) {
+    width: 100%;
+    max-width: 1440px;
+    height: 399px;
+  }
 }

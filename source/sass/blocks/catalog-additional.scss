@@ -1,3 +1,15 @@
+.catalog-additional {
+  padding-bottom: 35px;
+
+  @media ($tablet) {
+    padding-bottom: 76px;
+  }
+
+  @media ($desktop) {
+    padding-bottom: 15px;
+  }
+}
+
 .catalog-additional__heading {
   margin-bottom: 34px;
   margin-left: 20px;
@@ -5,5 +17,111 @@
   @media ($tablet) {
     margin-bottom: 79px;
     margin-left: 0;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 81px;
+  }
+}
+
+.catalog-additional__container {
+  @media ($desktop) {
+    display: flex;
+  }
+}
+
+.catalog-additional__list {
+  width: 100%;
+  margin-bottom: 39px;
+
+  @media ($tablet) {
+    margin-bottom: 69px;
+  }
+
+  @media ($desktop) {
+    width: 895px;
+    margin-right: auto;
+  }
+}
+
+.catalog-additional__promo {
+  padding: 65px 50px 42px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  background-color: $leaf;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media ($retina-2) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
+
+  @media ($tablet) {
+    display: flex;
+    padding: 65px 106px 68px 90px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  @media ($tablet) and ($retina-2) {
+    background-image: url("../img/gift-photo-tablet@2x.jpg");
+    background-size: 708px auto;
+  }
+
+  @media ($desktop) {
+    box-sizing: border-box;
+    display: block;
+    flex-shrink: 0;
+    align-self: flex-start;
+    width: 245px;
+    margin-left: auto;
+    padding: 63px 30px 42px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  @media ($desktop) and ($retina-2) {
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-size: 245px auto;
+  }
+}
+
+.catalog-additional__promo-icon {
+  display: table;
+  margin: 0 auto 56px;
+
+  @media ($tablet) {
+    margin: 0;
+  }
+
+  @media ($desktop) {
+    margin: 0 auto 57px;
+  }
+
+  & svg {
+    fill: currentColor;
+  }
+}
+
+.catalog-additional__promo-text {
+  margin: 0;
+  text-align: center;
+
+  @media ($tablet) {
+    width: 35%;
+    margin-left: auto;
+    padding-top: 7px;
+    text-align: left;
+  }
+
+  @media ($desktop) {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 }

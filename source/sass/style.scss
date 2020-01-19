@@ -1,13 +1,12 @@
 // Global
 @import "variables";
-// @import "mixins";
+@import "mixins";
 @import "helpers";
 @import "global";
 @import "fonts";
 
 // Blocks
 @import "blocks/page.scss";
-// @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/logo.scss";
 @import "blocks/choose-program.scss";
@@ -25,4 +24,6 @@
 @import "blocks/product-card.scss";
 @import "blocks/catalog-additional.scss";
 @import "blocks/selection-help.scss";
-// @import "blocks/";
+@import "blocks/simple-catalog.scss";
+@import "blocks/form";
+@import "blocks/diff-slider.scss";
