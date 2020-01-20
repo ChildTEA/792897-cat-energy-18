@@ -87,6 +87,7 @@
   font-family: $alter-font-stack;
   color: $black-three;
   text-transform: uppercase;
+  word-break: break-word;
 
   @media ($tablet) {
     margin-bottom: 10px;
@@ -112,6 +113,7 @@
   border-collapse: collapse;
 
   @media ($tablet) {
+    max-width: 249px;
     margin-bottom: 33px;
     font-size: 16px;
     line-height: 1;
@@ -125,9 +127,13 @@
 }
 
 .product-card__stat-name {
+  box-sizing: border-box;
   padding: 0;
+  word-break: break-word;
+  width: 60%;
 
   @media ($tablet) {
+    width: 55%;
     padding-top: 6px;
     padding-bottom: 8px;
   }
@@ -139,10 +145,15 @@
 }
 
 .product-card__stat-value {
+  box-sizing: border-box;
+  width: 40%;
+  min-width: 60px;
   padding: 0 0 0 12px;
   text-align: right;
 
   @media ($tablet) {
+    width: 45%;
+    min-width: 80px;
     padding-left: 16px;
   }
 }

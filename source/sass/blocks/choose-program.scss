@@ -37,11 +37,11 @@
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-position: right bottom;
+    }
 
-      @media ($retina-2) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: 720px auto;
-      }
+    @media ($desktop) and ($retina-2) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
     }
   }
 
@@ -437,7 +437,7 @@
 .choose-program__item-more-link {
   position: relative;
 
-  padding-right: 37px;
+  padding-right: 45px;
 
   font-size: 16px;
   line-height: 1;
@@ -449,15 +449,14 @@
   cursor: pointer;
 
   @media ($tablet) {
-    padding-right: 48px;
+    padding-right: 57px;
     font-size: 20px;
   }
 
   &:hover,
   &:focus {
-    padding-right: 56px;
-
     &::after {
+      right: 0;
       width: 33px;
       background-image: url("../img/icon-right-arrow-verylong.svg");
     }
@@ -471,7 +470,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 9px;
 
     width: 25px;
     height: 12px;

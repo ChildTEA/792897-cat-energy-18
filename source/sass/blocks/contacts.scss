@@ -117,8 +117,35 @@
   display: none;
 
   &--nojs {
+    position: relative;
     display: table;
     margin: 0 auto;
+
+    ::before {
+      content: "";
+      position: absolute;
+      top: 141px;
+      left: 132px;
+
+      width: 55px;
+      height: 53px;
+
+      background-image: url("../img/map-pin.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media ($tablet) {
+        top: 146px;
+        left: 319px;
+        width: 124px;
+        height: 106px;
+      }
+
+      @media ($desktop) {
+        top: 150px;
+        left: 69.3%;
+      }
+    }
   }
 }
 

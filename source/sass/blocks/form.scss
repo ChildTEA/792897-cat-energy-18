@@ -208,6 +208,8 @@
 
 .form__label-text {
   align-self: center;
+  max-width: 100%;
+  word-break: break-word;
   pointer-events: none;
 }
 
@@ -284,6 +286,7 @@
 .form__radio-input:checked + .form__control-indicator {
   &::before {
     content: "";
+    flex-shrink: 0;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -335,6 +338,7 @@
 
   border: 1px solid rgba($pinkish-grey, 0.5);
 
+  overflow: auto;
   resize: none;
 
   @media ($tablet) {
@@ -369,6 +373,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 30px;
   height: 30px;
   margin-right: 16px;
