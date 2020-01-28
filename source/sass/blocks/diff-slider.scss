@@ -37,11 +37,11 @@
 
   &--before {
     @media ($tablet) {
-      background-image: linear-gradient(to bottom, $white 0%, $white 169px, $white-two 169px, $white-two 100%);
+      background-image: linear-gradient($white 169px, $white-two 169px);
     }
 
     @media ($desktop) {
-      background-image: linear-gradient(to bottom, $white 0%, $white 190px, $white-two 190px, $white-two 100%);
+      background-image: linear-gradient($white 190px, $white-two 190px);
     }
 
     & img {
@@ -66,11 +66,11 @@
 
     @media ($tablet) {
       width: 50%;
-      background-image: linear-gradient(to bottom, $white 0%, $white 169px, #eaeaea 169px, #eaeaea 100%);
+      background-image: linear-gradient($white 169px, #eaeaea 169px);
     }
 
     @media ($desktop) {
-      background-image: linear-gradient(to bottom, $white 0%, $white 190px, #eaeaea 190px, #eaeaea 100%);
+      background-image: linear-gradient($white 190px, #eaeaea 190px);
     }
 
     & img {
