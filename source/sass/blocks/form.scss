@@ -184,33 +184,14 @@
   pointer-events: none;
 }
 
-.form__label--radio-couple:hover .form__control-indicator,
-.form__radio-input:focus + .form__control-indicator {
-  border-color: #bababa;
-}
-
-.form__label--radio-couple:active,
-.form__radio-input:active + .form__control-indicator,
-.form__radio-input:active ~ .form__label-text {
-  opacity: 0.3;
-}
-
-.form__label--check-couple:hover .form__control-indicator,
-.form__checkbox-input:focus + .form__control-indicator {
-  border-color: #bababa;
-}
-
-.form__label--check-couple:active,
-.form__checkbox-input:active + .form__control-indicator,
-.form__checkbox-input:active ~ .form__label-text {
-  opacity: 0.3;
-}
-
 .form__label-text {
   align-self: center;
   max-width: 100%;
+  color: $black-two;
   word-break: break-word;
   pointer-events: none;
+
+  user-select: none;
 }
 
 .form__text-input {
@@ -297,6 +278,47 @@
       height: 18px;
     }
   }
+}
+
+.form__label--radio-couple:hover .form__control-indicator,
+.form__radio-input:focus + .form__control-indicator {
+  border-color: #bababa;
+}
+
+.form__label:active .form__control-indicator,
+.form__radio-input:active + .form__control-indicator {
+  border-color: rgba(#bababa, 0.3);
+
+  &::before {
+    background-color: rgba($leaf, 0.3);
+  }
+}
+
+.form__radio-input:active ~ .form__label-text {
+  color: rgba($black-two, 0.3);
+}
+
+.form__label--check-couple:hover .form__control-indicator,
+.form__checkbox-input:focus + .form__control-indicator {
+  border-color: #bababa;
+}
+
+// .form__label--check-couple:active,
+.form__label:active .form__control-indicator,
+.form__checkbox-input:active + .form__control-indicator {
+  border-color: rgba(#bababa, 0.3);
+
+  & svg {
+    fill: rgba($leaf, 0.3);
+  }
+}
+
+.form__checkbox-input:active ~ .form__label-text {
+  color: rgba($black-two, 0.3);
+}
+
+.form__label:active .form__label-text {
+  color: rgba($black-two, 0.3);
 }
 
 .form__input-icon {
